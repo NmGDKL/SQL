@@ -26,7 +26,7 @@
 	
 	SELECT *
 	FROM invoices
-	WHERE total>10;
+	WHERE total>20;
 	
 	
 	

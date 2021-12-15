@@ -26,7 +26,33 @@
 	
 	SELECT *
 	FROM invoices
-	WHERE total>30;
+	WHERE total>10;
 	
+/*===================================================================================
+	                                      LIMIT
+====================================================================================*/
+	
+	SELECT InvoiceDate,InvoiceId, total
+	From invoices
+    WHERE total > 10
+    LIMIT 4 ;
+	
+/*===================================================================================
+	                                      ORDER BY
+====================================================================================*/
+
+   SELECT *
+   FROM invoices
+   WHERE total > 10
+   ORDER BY total ASC;
+   
+   SELECT *
+   FROM invoices
+   WHERE total > 10
+   ORDER BY InvoiceDate DESC
+   LIMIT 10;
+   
+   
+
 	
 	
